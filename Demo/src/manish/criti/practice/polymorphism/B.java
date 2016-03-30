@@ -6,6 +6,13 @@ public class B extends A {
 		System.out.println("inside B constructor");
 	}
 
+	
+	/*  
+	 *******************************************************************************
+	 *                                                                             *
+	 * you can widen the visibility of the method but not reduce the visibility    *
+	 *                                                                             *
+	 *******************************************************************************/
 	public Integer  add(Integer num1, Integer num2) {
 		System.out.print(Thread.currentThread().getStackTrace()[1].getClassName()+".");
 		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
